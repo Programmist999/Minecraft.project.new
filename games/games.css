@@ -1,0 +1,149 @@
+body {
+    background-color: rgb(20, 20, 20);
+    color: #dbdbdb;
+    font-family: 'Monocraft', monospace;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: left; */
+    gap: 20px;
+}
+
+.gallary {
+    width: 500px;
+    height: 400px;
+}
+
+.gallary_current {
+    width: 100%;
+    height: 80%;
+}
+
+.gallary_current > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.gallary_list {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+    overflow-x: scroll;
+}
+
+.gallary_list img {
+    height: 100%;
+    width: 125px;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.active {
+    border: 2px solid white;
+}
+
+.header_container {
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.header_info {
+    width: 60%;
+    height: 500px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.header_info_top {
+    width: 100%;
+    height: 40%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.header_info_bottom {
+    width: 100%;
+    height: 60%;
+    box-sizing: border-box;
+}
+
+.game_box_art {
+    width: 50%;
+    height: 100%;
+}
+
+.game_box_art > img {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.game_brief_description {
+    position: relative;
+}
+
+.game_brief_description > * {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.pay_button {
+    margin-top: 15px;
+    width: 20%;
+    background-color: green;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    right: 0;
+}
+
+.pay_button > h3 {
+    margin-block: 0;
+}
+
+.pay_button > img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.invisible {
+    display: none;
+}
+
+.tabs_group {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+}
+
+.tabs_group > div {
+    background-color: black;
+    padding-inline: 10px;
+    padding-block: 5px;
+    font-size: 14px;
+    cursor: default;
+}
+
+.tabs_group > div:hover {
+    color: rgb(78, 78, 78);
+}
+
+.tab_active {
+    background-color: red !important;
+}

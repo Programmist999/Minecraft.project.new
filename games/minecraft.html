@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="games.css">
+        <style>
+            body {
+                font-family: 'Monocraft', monospace;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Minecraft</h1>
+        <div class="header_container">
+            <div class="header_info">
+                <div class="header_info_top">
+                    <div class="game_box_art"> 
+                        <img src="../amg/Minecraft_–_Volume_Alpha_(обложка_альбома).png">
+                    </div>
+                    <div class="game_brief_description">
+                        <h1>ЦЕНА: 79.99$</h1>
+                        <h3>Minecraft — это популярная песочница, в которой игроки могут исследовать бесконечные миры, строить уникальные конструкции и выживать в разнообразных условиях.</h3>
+                        <div class="pay_button">
+                            <img src="../amg/Без названия.png">
+                            <h3>Купить</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_info_bottom">
+                    <div class="tabs_group">
+                        <div class="tab_active" id="firstActiveTab" onclick="clickTab(event)" data-tab-id="tab_description">Описание</div>
+                        <div onclick="clickTab(event)" data-tab-id="tab_system_requiments">Системные требования</div>
+                    </div>
+                    <div id="tab_description">
+                    <p>Minecraft — это популярная песочница, в которой игроки могут исследовать бесконечные миры, строить уникальные конструкции и выживать в разнообразных условиях. В этой игре вы можете собирать ресурсы, создавать предметы, строить дома и даже целые города, используя блоки различных материалов.</p>
+                    <p>Мир Minecraft наполнен множеством биомов, от густых лесов до пустынь и гор, а также разнообразными существами — от дружелюбных животных до опасных монстров. Игроки могут выбирать разные режимы игры: в режиме выживания необходимо заботиться о здоровье и голоде, в режиме креатива доступны все ресурсы и возможности для безлимитного строительства.</p>
+                    <p>Minecraft вдохновляет на творчество и сотрудничество, позволяя игрокам объединяться в многопользовательских мирах, участвовать в совместных проектах или сражаться друг с другом. Благодаря своему уникальному стилю и возможности бесконечного самовыражения, Minecraft стал культовым явлением в мире видеоигр.</p>
+                    </div>
+                    <div id="tab_system_requiments" class="invisible">
+                        <p>Операционная система: Windows 12/13</p>
+                        <p>Процессор: Intel core i11 13900K/core i13 131000K</p>
+                        <p>Видеокарта: Nvidia RTX 6090 SUPER/TI</p>
+                        <p>Оперативная память: не менее 256Террабайт</p>
+                    </div>    
+                </div>
+            </div>
+            <div class="gallary">
+                <div class="gallary_current">
+                    <img id="mainImage" src="../amg/minecraft.avif">
+                </div>
+                <div class="gallary_list">
+                    <img id="firstImage" class="active" onclick="clickImage(event)" src="../amg/minecraft.avif">
+                    <img onclick="clickImage(event)" src="../amg/scale_1200.jpg">
+                    <img onclick="clickImage(event)" src="../amg/minecraft1.jpg">
+                    <img onclick="clickImage(event)" src="../amg/minecraft3.avif">
+                    <img onclick="clickImage(event)" src="../amg/minecraft2.jpg">
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <script src="../js/gallary.js"></script>
+        <script src="../js/tabsActive.js"></script>
+    </footer>
+</html>
